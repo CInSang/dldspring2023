@@ -1,14 +1,16 @@
 `timescale 1ns / 1ps
 module tb ();
 
+
    logic        a;
    logic 	b;
-   logic 	c;
-   logic 	y;
+   logic 	cin;
+   logic 	s;
+   logic	cout;
    logic        clk;   
    
   // instantiate device under test
-   silly dut (a, b, c, y);
+   silly dut (a, b, cin, s, cout);
 
    // 2 ns clock
    initial 
