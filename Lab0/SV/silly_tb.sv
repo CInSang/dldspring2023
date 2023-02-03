@@ -4,13 +4,13 @@ module tb ();
 
    logic        a;
    logic 	b;
-   logic 	cin;
+   logic 	c;
    logic 	s;
    logic	cout;
    logic        clk;   
    
   // instantiate device under test
-   silly dut (a, b, cin, s, cout);
+   fulladder dut (a, b, c, s, cout);
 
    // 2 ns clock
    initial 
@@ -23,37 +23,37 @@ module tb ();
    initial
      begin
     
-	#0   a = $0;	
-	#0   b = $0;	
-	#0   c = $0;
+	#0   a = 0;	
+	#0   b = 0;	
+	#0   c = 0;
 
-	#20  a = $0;	
-	#0   b = $0;	
-	#0   c = $1;
+	#20  a = 0;	
+	#0   b = 0;	
+	#0   c = 1;
 
-	#20  a = $0;	
-	#0   b = $1;	
-	#0   c = $0;	
+	#20  a = 0;	
+	#0   b = 1;	
+	#0   c = 0;	
 
-	#20  a = $0;	
-	#0   b = $1;	
-	#0   c = $1;	
+	#20  a = 0;	
+	#0   b = 1;	
+	#0   c = 1;	
 
-	#20  a = $1;	
-	#0   b = $0;	
-	#0   c = $0;	
+	#20  a = 1;	
+	#0   b = 0;	
+	#0   c = 0;	
 
-	#20  a = $1;	
-	#0   b = $0;	
-	#0   c = $1;	
+	#20  a = 1;	
+	#0   b = 0;	
+	#0   c = 1;	
 
-	#20  a = $1;	
-	#0   b = $1;	
-	#0   c = $0;	
+	#20  a = 1;	
+	#0   b = 1;	
+	#0   c = 0;	
 
-	#20  a = $1;	
-	#0   b = $1;	
-	#0   c = $1;	
+	#20  a = 1;	
+	#0   b = 1;	
+	#0   c = 1;	
 
 	#20  a = $random;	
 	#0   b = $random;	
