@@ -23,37 +23,37 @@ module tb ();
    initial
      begin
     
-	#0   a = $random;	
-	#0   b = $random;	
-	#0   c = $random;
+	#0   a = $0;	
+	#0   b = $0;	
+	#0   c = $0;
 
-	#20  a = $random;	
-	#0   b = $random;	
-	#0   c = $random;
+	#20  a = $0;	
+	#0   b = $0;	
+	#0   c = $1;
 
-	#20  a = $random;	
-	#0   b = $random;	
-	#0   c = $random;	
+	#20  a = $0;	
+	#0   b = $1;	
+	#0   c = $0;	
 
-	#20  a = $random;	
-	#0   b = $random;	
-	#0   c = $random;	
+	#20  a = $0;	
+	#0   b = $1;	
+	#0   c = $1;	
 
-	#20  a = $random;	
-	#0   b = $random;	
-	#0   c = $random;	
+	#20  a = $1;	
+	#0   b = $0;	
+	#0   c = $0;	
 
-	#20  a = $random;	
-	#0   b = $random;	
-	#0   c = $random;	
+	#20  a = $1;	
+	#0   b = $0;	
+	#0   c = $1;	
 
-	#20  a = $random;	
-	#0   b = $random;	
-	#0   c = $random;	
+	#20  a = $1;	
+	#0   b = $1;	
+	#0   c = $0;	
 
-	#20  a = $random;	
-	#0   b = $random;	
-	#0   c = $random;	
+	#20  a = $1;	
+	#0   b = $1;	
+	#0   c = $1;	
 
 	#20  a = $random;	
 	#0   b = $random;	
